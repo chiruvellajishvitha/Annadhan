@@ -13,6 +13,13 @@ dist-ssr
 output
 *.local
 package-lock.json
+.env
+.env.*
+!.env.example
+coverage/
+.vite/
+.turbo/
+*.tsbuildinfo
 
 # Editor directories and files
 .vscode/*
