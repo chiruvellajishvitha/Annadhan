@@ -1,90 +1,171 @@
-# Welcome to Your Miaoda Project
+# 🍲 Annadhan
+### Connecting Surplus Food with People in Need
 
-## Project Info
+Annadhan is a web platform that helps reduce food waste by connecting food donors with NGOs and volunteers who can distribute food to underprivileged communities.
 
-## Project Directory
+The platform enables individuals, restaurants, and event organizers to donate excess food easily so that it reaches people in need instead of being wasted.
+
+---
+
+## 🌍 The Problem
+
+Food waste and hunger exist at the same time in many places.
+
+- Restaurants and events often throw away surplus food.
+- NGOs struggle to locate available food donations.
+- There is no simple digital platform connecting donors and receivers.
+
+As a result, large quantities of edible food are wasted while many people go hungry.
+
+---
+
+## 💡 Our Solution
+
+Annadhan acts as a **digital bridge** between food donors and NGOs.
+
+Through a simple and intuitive platform:
+
+- Donors can list available food.
+- NGOs can discover nearby donations.
+- Food can be collected and distributed quickly.
+
+The goal is to create a **sustainable food-sharing ecosystem**.
+
+---
+
+## ✨ Key Features
+
+### 🥘 Easy Food Donation
+Donors can quickly share surplus food by adding:
+- Food type
+- Quantity
+- Pickup location
+- Available time
+
+### 🤝 NGO Collaboration
+Registered NGOs can view available food donations and coordinate collection.
+
+### 📍 Efficient Coordination
+The platform helps connect donors and NGOs for smooth food pickup and distribution.
+
+### 🔐 Secure User Access
+Users can sign in securely and manage their donations.
+
+---
+
+## 🛠️ Tech Stack
+
+**Frontend**
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+
+**Backend & Database**
+- Supabase
+
+**UI Libraries**
+- Radix UI
+- Lucide Icons
+
+**Additional Tools**
+- React Router
+- React Hook Form
+- Zod Validation
+
+---
+
+## 📂 Project Structure
 
 ```
-├── README.md # Documentation
-├── components.json # Component library configuration
-├── index.html # Entry file
-├── package.json # Package management
-├── postcss.config.js # PostCSS configuration
-├── public # Static resources directory
-│   └── images # Image resources
-├── src # Source code directory
-│   ├── App.tsx # Entry file
-│   ├── components # Components directory
-│   ├── context # Context directory
-│   ├── db # Database configuration directory
-│   ├── hooks # Common hooks directory
-│   ├── index.css # Global styles
-│   ├── layout # Layout directory
-│   ├── lib # Utility library directory
-│   ├── main.tsx # Entry file
-│   ├── routes.tsx # Routing configuration
-│   ├── pages # Pages directory
-│   ├── services # Database interaction directory
-│   ├── types # Type definitions directory
-├── tsconfig.app.json # TypeScript frontend configuration file
-├── tsconfig.json # TypeScript configuration file
-├── tsconfig.node.json # TypeScript Node.js configuration file
-└── vite.config.ts # Vite configuration file
+annadhan
+│
+├── public
+│
+├── src
+│   ├── components
+│   ├── pages
+│   ├── hooks
+│   ├── context
+│   ├── services
+│   ├── lib
+│   ├── types
+│   ├── App.tsx
+│   └── main.tsx
+│
+├── index.html
+├── package.json
+└── README.md
 ```
 
-## Tech Stack
+---
 
-Vite, TypeScript, React, Supabase
+## ⚙️ Getting Started
 
-## Development Guidelines
+### Clone the repository
 
-### How to edit code locally?
-
-You can choose [VSCode](https://code.visualstudio.com/Download) or any IDE you prefer. The only requirement is to have Node.js and npm installed.
-
-### Environment Requirements
-
-```
-# Node.js ≥ 20
-# npm ≥ 10
-Example:
-# node -v   # v20.18.3
-# npm -v    # 10.8.2
+```bash
+git clone https://github.com/chiruvellajishvitha/Annadhan.git
 ```
 
-### Installing Node.js on Windows
+### Navigate to the project folder
 
-```
-# Step 1: Visit the Node.js official website: https://nodejs.org/, click download. The website will automatically suggest a suitable version (32-bit or 64-bit) for your system.
-# Step 2: Run the installer: Double-click the downloaded installer to run it.
-# Step 3: Complete the installation: Follow the installation wizard to complete the process.
-# Step 4: Verify installation: Open Command Prompt (cmd) or your IDE terminal, and type `node -v` and `npm -v` to check if Node.js and npm are installed correctly.
+```bash
+cd Annadhan
 ```
 
-### Installing Node.js on macOS
+### Check pnpm version (optional)
 
-```
-# Step 1: Using Homebrew (Recommended method): Open Terminal. Type the command `brew install node` and press Enter. If Homebrew is not installed, you need to install it first by running the following command in Terminal:
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-Alternatively, use the official installer: Visit the Node.js official website. Download the macOS .pkg installer. Open the downloaded .pkg file and follow the prompts to complete the installation.
-# Step 2: Verify installation: Open Command Prompt (cmd) or your IDE terminal, and type `node -v` and `npm -v` to check if Node.js and npm are installed correctly.
+```bash
+npx pnpm -v
 ```
 
-### After installation, follow these steps:
+### Install dependencies
 
-```
-# Step 1: Download the code package
-# Step 2: Extract the code package
-# Step 3: Open the code package with your IDE and navigate into the code directory
-# Step 4: In the IDE terminal, run the command to install dependencies: npm i
-# Step 5: In the IDE terminal, run the command to start the development server: npm run dev -- --host 127.0.0.1
-# Step 6: if step 5 failed, try this command to start the development server: npx vite --host 127.0.0.1
+```bash
+npx pnpm install
 ```
 
-### How to develop backend services?
+### Start the development server
 
-Configure environment variables and install relevant dependencies.If you need to use a database, please use the official version of Supabase.
+```bash
+npx pnpm exec vite
+```
 
-## Learn More
+### Open in your browser
 
-You can also check the help documentation: Download and Building the app（ [https://intl.cloud.baidu.com/en/doc/MIAODA/s/download-and-building-the-app-en](https://intl.cloud.baidu.com/en/doc/MIAODA/s/download-and-building-the-app-en)）to learn more detailed content.
+```
+http://localhost:5173
+```
+
+---
+
+## 🚀 Future Improvements
+
+Planned features include:
+
+- Real-time donation tracking
+- Volunteer coordination system
+- Mobile application
+- Food safety verification
+- Analytics dashboard
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome.
+
+1. Fork the repository  
+2. Create a new branch  
+3. Make your changes  
+4. Commit the changes  
+5. Submit a Pull Request  
+
+---
+
+## ❤️ Vision
+
+**No food should be wasted and no one should sleep hungry.**
+
+Annadhan aims to build a community where surplus food is shared responsibly and reaches those who need it the most.
